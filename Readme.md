@@ -26,7 +26,6 @@ according to your preferences.
 * [Opening braces go on the same line](#opening-braces-go-on-the-same-line)
 * [Method chaining](#method-chaining)
 * [Declare one variable per var statement](#declare-one-variable-per-var-statement)
-* [Use lowerCamelCase for variables, properties and function names](#use-lowercamelcase-for-variables-properties-and-function-names)
 * [Use UpperCamelCase for class names](#use-uppercamelcase-for-class-names)
 * [Use UPPERCASE for Constants](#use-uppercase-for-constants)
 * [Object / Array creation](#object--array-creation)
@@ -186,24 +185,6 @@ while (keys.length) {
 ```
 
 [crockfordconvention]: http://javascript.crockford.com/code.html
-
-## Use lowerCamelCase for variables, properties and function names
-
-Variables, properties and function names should use `lowerCamelCase`.  They
-should also be descriptive. Single character variables and uncommon
-abbreviations should generally be avoided.
-
-*Right:*
-
-```js
-var adminUser = db.query('SELECT * FROM users ...');
-```
-
-*Wrong:*
-
-```js
-var admin_user = db.query('SELECT * FROM users ...');
-```
 
 ## Use UpperCamelCase for class names
 
