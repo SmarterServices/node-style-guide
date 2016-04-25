@@ -544,6 +544,7 @@ function Book(title, author) {
 ```js
 // Inserts a book.
 function addBook(title, author) {
+  return true;
 }
 ```
 
