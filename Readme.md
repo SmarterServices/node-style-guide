@@ -22,7 +22,7 @@ according to your preferences.
 * [Newlines](#newlines)
 * [No trailing whitespace](#no-trailing-whitespace)
 * [Use Semicolons](#use-semicolons)
-* [80 characters per line](#80-characters-per-line)
+* [80 characters per line](#200-characters-per-line)
 * [Use single quotes](#use-single-quotes)
 * [Opening braces go on the same line](#opening-braces-go-on-the-same-line)
 * [Declare one variable per var statement](#declare-one-variable-per-var-statement)
@@ -49,6 +49,7 @@ according to your preferences.
 
 ### Comments
 * [Use slashes for comments](#use-slashes-for-comments)
+* [Comment Functions] (#comment-functions)
 
 ### Miscellaneous
 * [Object.freeze, Object.preventExtensions, Object.seal, with, eval](#objectfreeze-objectpreventextensions-objectseal-with-eval)
@@ -519,6 +520,33 @@ if (isSessionValid) {
   // ...
 }
 ```
+
+### Comment Functions
+
+All functions and classes should be properly documented using the [JSDoc format](http://usejsdoc.org/).
+
+*Right:*
+
+```js
+/**
+ * Represents a book.
+ * @param {string} title - The title of the book.
+ * @param {string} author - The author of the book.
+ * @return {boolean} Returns a boolean value based on the outcome of the insert process..
+ */
+function Book(title, author) {
+  return true;
+}
+```
+
+*Wrong:*
+
+```js
+// Inserts a book.
+function addBook(title, author) {
+}
+```
+
 
 ## Miscellaneous
 
